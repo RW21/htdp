@@ -13,4 +13,14 @@
 (define (string-delete str i) (string-append (substring str 0 i)
                                              (substring str (add1 i) (string-length str))))
                                                                      
-                                  
+; ex 34-39
+
+; String -> String
+; computes first character of a string
+; it does not account for empty strings
+; given: "hi", expect: "h"
+(define (string-first str) (string-ref str 0))
+
+; String -> String
+(define (string-last str) (string-ref str (string-length str)))
+
